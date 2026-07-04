@@ -96,7 +96,7 @@
 /* ── Project cards ── */
 .pg-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 30px;
   margin-top: 70px;
 }
@@ -254,12 +254,16 @@
     gap: 16px 24px;
   }
   .pg-projects {
-    grid-template-columns: 1fr;
     gap: 24px;
   }
   .pg-outro {
     flex-direction: column;
     text-align: center;
     margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pg-projects {
+    grid-template-columns: 1fr;
   }
 }

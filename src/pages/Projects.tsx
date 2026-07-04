@@ -36,24 +36,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "F1 Analytics Dashboard",
-    description:
-      "A Formula 1 analytics dashboard that turns raw race data into interactive standings, driver stats and season insights.",
-    tech: ["React", "Next.js", "Data Viz", "REST APIs"],
-    live: "https://f1-analytics-phor7pqih-loukik-kokates-projects.vercel.app/",
-    github: "https://github.com/Loukik99",
-    image: "/images/f1-preview.png",
-  },
-  {
-    title: "Adaptus Dashboard",
-    description:
-      "An admin dashboard with a clean, data-dense interface for managing operations, users and analytics in one place.",
-    tech: ["React", "Next.js", "Node.js", "Tailwind CSS"],
-    live: "https://adaptus-project.vercel.app/dashboard",
-    github: "https://github.com/Loukik99",
-    image: "/images/ad-preview.png",
-  },
-  {
     title: "Mahabharat",
     description:
       "A responsive business website delivering a fast, modern and mobile-first web presence for the client.",
@@ -81,6 +63,24 @@ const projects: Project[] = [
     github: "https://github.com/Loukik99/BDK_Kangralkar-Sons",
     image: "/images/bdk-preview.png",
     status: "Building",
+  },
+  {
+    title: "F1 Analytics Dashboard",
+    description:
+      "A Formula 1 analytics dashboard that turns raw race data into interactive standings, driver stats and season insights.",
+    tech: ["React", "Next.js", "Data Viz", "REST APIs"],
+    live: "https://f1-analytics-phor7pqih-loukik-kokates-projects.vercel.app/",
+    github: "https://github.com/Loukik99",
+    image: "/images/f1-preview.png",
+  },
+  {
+    title: "Adaptus Dashboard",
+    description:
+      "An admin dashboard with a clean, data-dense interface for managing operations, users and analytics in one place.",
+    tech: ["React", "Next.js", "Node.js", "Tailwind CSS"],
+    live: "https://adaptus-project.vercel.app/dashboard",
+    github: "https://github.com/Loukik99",
+    image: "/images/ad-preview.png",
   },
 ];
 

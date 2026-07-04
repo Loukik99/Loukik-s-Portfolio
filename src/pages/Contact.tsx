@@ -7,7 +7,7 @@ import "./Contact.css";
 
 // Free key from https://web3forms.com (enter loukikkokate87@gmail.com).
 // Submissions are delivered straight to that inbox.
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "2f01a17a-5049-49c8-bab2-aef891fc697f";
 
 interface Channel {
   icon: IconType;
