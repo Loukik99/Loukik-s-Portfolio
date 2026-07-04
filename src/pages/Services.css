@@ -1,0 +1,235 @@
+.services-page {
+  max-width: 1300px;
+  margin: auto;
+  padding: 150px 24px 110px;
+  box-sizing: border-box;
+}
+
+/* ── Hero ── */
+.sv-hero {
+  text-align: left;
+}
+.sv-eyebrow {
+  color: var(--accentColor);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+.sv-hero h1 {
+  font-size: clamp(64px, 12vw, 170px);
+  line-height: 0.95;
+  font-weight: 700;
+  margin: 10px 0 18px;
+  letter-spacing: 1px;
+}
+.sv-hero p {
+  max-width: 480px;
+  color: #9aa4b2;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Feature row (static) ── */
+.sv-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px 30px;
+  margin: 70px 0 0;
+  padding: 26px 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.sv-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #c9d1dc;
+  font-size: 16px;
+}
+.sv-feature svg {
+  color: var(--accentColor);
+  font-size: 20px;
+}
+
+/* ── Service cards ── */
+.sv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+}
+.sv-card {
+  position: relative;
+  padding: 44px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+.sv-card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(
+    circle,
+    rgba(94, 234, 212, 0.12),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.sv-card:hover {
+  border-color: rgba(94, 234, 212, 0.35);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.4);
+}
+.sv-card:hover::before {
+  opacity: 1;
+}
+
+.sv-card-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.sv-num {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accentColor);
+  opacity: 0.6;
+}
+.sv-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  font-size: 26px;
+  color: var(--accentColor);
+  background: rgba(94, 234, 212, 0.1);
+  border: 1px solid rgba(94, 234, 212, 0.25);
+}
+.sv-card-head h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+.sv-desc {
+  color: #adb4c0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 24px 0 30px;
+  max-width: 760px;
+}
+
+.sv-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+.sv-block h4 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8b93a1;
+  margin: 0 0 16px;
+  font-weight: 500;
+}
+
+/* process steps */
+.sv-process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 8px;
+}
+.sv-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  font-size: 14px;
+  color: #e6eaf0;
+}
+.sv-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  color: #071a17;
+  background: var(--accentColor);
+}
+
+/* tech tags */
+.sv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sv-tag {
+  font-size: 13px;
+  padding: 6px 13px;
+  border-radius: 30px;
+  color: #cdd5df;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CTA */
+.sv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--accentColor);
+  color: #071a17;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+.sv-btn:hover {
+  color: #071a17;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(94, 234, 212, 0.28);
+}
+
+@media only screen and (max-width: 900px) {
+  .services-page {
+    padding: 120px 18px 80px;
+  }
+  .sv-features {
+    justify-content: flex-start;
+    gap: 16px 24px;
+  }
+  .sv-card {
+    padding: 30px 24px;
+  }
+  .sv-card-head h2 {
+    font-size: 24px;
+  }
+  .sv-desc {
+    font-size: 16px;
+  }
+  .sv-cols {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+}

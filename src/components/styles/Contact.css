@@ -1,0 +1,130 @@
+.footer-section {
+  position: relative;
+  z-index: 2;
+  background-color: var(--backgroundColor);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 80px;
+  padding: 60px 0 50px;
+}
+
+.footer-inner {
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 36px;
+  padding-bottom: 40px;
+}
+
+/* Brand */
+.footer-brand h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+.footer-brand p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--accentColor);
+  letter-spacing: 0.5px;
+}
+
+/* Contact links */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15.5px;
+  color: #c9d1dc;
+  transition: color 0.3s ease;
+}
+.footer-link svg {
+  font-size: 18px;
+  color: var(--accentColor);
+  flex-shrink: 0;
+}
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  font-size: 19px;
+  color: #eae5ec;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.footer-socials a:hover {
+  color: var(--accentColor);
+  border-color: rgba(94, 234, 212, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(94, 234, 212, 0.18);
+}
+
+/* Bottom row */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.footer-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: #8b93a1;
+}
+.footer-credit {
+  font-size: 13.5px;
+  color: #8b93a1;
+}
+.footer-credit > span {
+  color: var(--accentColor);
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-section {
+    margin-top: 50px;
+    padding: 45px 0 40px;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .footer-brand h2 {
+    font-size: 26px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

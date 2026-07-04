@@ -1,0 +1,147 @@
+.tech-stack-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 100px 0;
+  --mx: 0;
+  --my: 0;
+  overflow: hidden;
+}
+
+.tech-stack-inner {
+  margin: auto;
+}
+
+.tech-stack-title {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  text-align: center;
+}
+.tech-stack-title > span {
+  color: var(--accentColor);
+}
+.tech-stack-sub {
+  color: #9aa4b2;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 auto 60px;
+  text-align: center;
+  max-width: 520px;
+}
+
+.tech-cat {
+  margin-bottom: 46px;
+}
+.tech-cat-label {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--accentColor);
+  text-align: center;
+  margin: 0 0 24px;
+  opacity: 0.85;
+}
+.tech-cat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Layer 1: mouse parallax drift */
+.tech-chip {
+  transform: translate3d(
+    calc(var(--mx) * var(--depth, 8) * 1px),
+    calc(var(--my) * var(--depth, 8) * 1px),
+    0
+  );
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+/* Layer 2: gentle idle float */
+.tech-chip-float {
+  animation: techFloat 6s ease-in-out infinite alternate;
+}
+@keyframes techFloat {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+/* Layer 3: the visible chip, magnetic + hover glow */
+.tech-chip-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  cursor: default;
+  transform: translate(var(--tx, 0px), var(--ty, 0px)) scale(var(--sc, 1));
+  transition: transform 0.25s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease, background 0.3s ease;
+  will-change: transform;
+}
+.tech-chip-btn:hover {
+  --sc: 1.07;
+  background: rgba(255, 255, 255, 0.07);
+  border-color: color-mix(in srgb, var(--glow) 55%, transparent);
+  box-shadow: 0 0 26px -6px var(--glow), 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.tech-chip-icon {
+  display: flex;
+  font-size: 22px;
+  /* each chip sets --glow to the tech's brand colour */
+  color: var(--glow);
+  transition: filter 0.3s ease;
+}
+.tech-chip-btn:hover .tech-chip-icon {
+  filter: drop-shadow(0 0 8px var(--glow));
+}
+.tech-chip-name {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  color: #e6eaf0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .tech-stack-title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .tech-stack-section {
+    padding: 60px 0;
+  }
+  .tech-stack-title {
+    font-size: 38px;
+  }
+  .tech-stack-sub {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .tech-cat-chips {
+    gap: 12px;
+  }
+  .tech-chip-btn {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .tech-chip-icon {
+    font-size: 19px;
+  }
+  .tech-chip-name {
+    font-size: 13px;
+  }
+}
