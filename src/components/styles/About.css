@@ -35,6 +35,20 @@
   font-weight: 700;
 }
 
+/* Mobile/tablet scroll reveal (JS arms .about-hidden, then adds .about-show).
+   Default markup has neither class, so text is always visible as a fallback. */
+.about-me .about-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(6px);
+  transition: opacity 0.9s ease, transform 0.9s ease, filter 0.9s ease;
+}
+.about-me .about-hidden.about-show {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
 @media only screen and (min-width: 600px) {
   .about-section {
     justify-content: center;

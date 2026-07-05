@@ -1,9 +1,5 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles/About.css";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -13,21 +9,37 @@ const About = () => {
     // scroll timeline (GsapScroll). Only add a self-contained reveal on
     // smaller screens, where that timeline doesn't run.
     if (window.innerWidth > 1024) return;
-    const ctx = gsap.context(() => {
-      gsap.from([".about-me .title", ".about-me .para"], {
-        y: 40,
-        opacity: 0,
-        filter: "blur(6px)",
-        duration: 1,
-        ease: "power3.out",
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: ".about-section",
-          start: "top 78%",
-        },
-      });
-    }, sectionRef);
-    return () => ctx.revert();
+    const section = sectionRef.current;
+    if (!section) return;
+    const targets = Array.from(
+      section.querySelectorAll<HTMLElement>(".title, .para")
+    );
+
+    // Arm the hidden state via a class (default markup stays visible, so the
+    // text can never get stuck hidden if JS fails). The reveal is pure CSS,
+    // triggered by adding a class — this is set with a timer/observer rather
+    // than a gsap tween, so it applies reliably even if rAF is throttled.
+    targets.forEach((t) => t.classList.add("about-hidden"));
+    const show = () => targets.forEach((t) => t.classList.add("about-show"));
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          show();
+          io.disconnect();
+        }
+      },
+      { threshold: 0.15 }
+    );
+    io.observe(section);
+
+    // Safety net: reveal no matter what after a short delay.
+    const fallback = window.setTimeout(show, 1800);
+
+    return () => {
+      io.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   return (
