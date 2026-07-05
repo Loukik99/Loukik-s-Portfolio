@@ -21,51 +21,64 @@ const stats = [
   { value: "35%", label: "Smaller bundle size" },
 ];
 
+// Kept in sync with the home Tech Stack section (TechStack.tsx).
 const skillGroups = [
   {
     name: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Redux", "Tailwind CSS", "Material UI"],
+    items: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Context API",
+    ],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs", "Socket.io", "JWT", "OAuth"],
+    items: ["Node.js", "Express.js", "REST APIs"],
   },
   {
     name: "Databases",
-    items: ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
+    items: ["MongoDB", "MySQL", "PostgreSQL"],
   },
   {
-    name: "Tools & Cloud",
-    items: ["Git", "GitHub Actions", "Docker", "AWS", "Vercel", "Jira"],
+    name: "Tools",
+    items: ["Git", "GitHub", "GitHub Actions", "Vercel", "Chrome DevTools"],
+  },
+  {
+    name: "AI",
+    items: ["ChatGPT", "Claude", "GitHub Copilot"],
   },
 ];
 
 const timeline = [
   {
     badge: "NOW",
-    role: "Software Engineer (Full Stack)",
-    org: "SDK Infotech Pvt Ltd · Pune",
-    desc: "Architecting and shipping production-grade full-stack applications with React, Next.js, Node.js and PostgreSQL. Designing REST APIs, real-time features and Redis caching, and mentoring junior developers.",
+    role: "Freelance Full-Stack Developer",
+    org: "Self-employed · Pune",
+    desc: "Partnering with clients and teams to design, build and ship modern, scalable web applications end to end with React, Next.js, Node.js and PostgreSQL.",
   },
   {
     badge: "MCA",
     role: "Master of Computer Applications",
-    org: "Jain University · Bangalore",
+    org: "Jain University · Bengaluru · 2023-2025",
     desc: "Deepened my foundation in system design, data structures and scalable software engineering.",
   },
   {
     badge: "BCA",
     role: "Bachelor of Computer Applications",
-    org: "Rani Channamma University · Belagavi",
+    org: "Govindram Science College · Belgaum · 2019-2022",
     desc: "Built my core skills in programming, databases and web fundamentals.",
   },
 ];
 
 const achievements = [
-  "Cut API response times from 320ms to under 180ms with Redis caching and query optimisation.",
-  "Handled 500+ concurrent WebSocket connections with Socket.io and Redis Pub/Sub.",
+  "Cut API response times from 320ms to under 180ms with in-memory caching and query optimisation.",
+  "Handled 500+ concurrent WebSocket connections with Socket.io for real-time features.",
   "Reduced complex report generation from 12s to under 2s through indexing and aggregation.",
-  "Mentored 3 junior developers on API design, Git workflows and production debugging.",
+  "Mentored developers on API design, Git workflows and production debugging.",
 ];
 
 const About = () => {
@@ -109,21 +122,18 @@ const About = () => {
         </div>
         <div className="ab-story">
           <p>
-            I'm Loukik Kokate, a full-stack software engineer based in Pune with
-            over 1.8 years of experience building production-grade web
-            applications. I love turning complex problems into clean, reliable
-            software.
+            Motivated Full Stack Developer with freelance experience delivering
+            responsive, production-ready web applications and business websites
+            for clients across consultancy, event management, and corporate
+            domains.
           </p>
           <p>
-            At SDK Infotech I architect and ship full-stack products with React,
-            Next.js, Node.js and PostgreSQL, designing high-throughput APIs,
-            real-time systems and caching layers that stay fast under load. As a
-            freelancer, I partner with clients and teams to design and build
-            modern, scalable web experiences end to end.
-          </p>
-          <p>
-            I care about performance, clean architecture and great developer
-            experience, and I enjoy mentoring other developers along the way.
+            Skilled in React.js, Next.js, Node.js, Express.js, MongoDB, SQL,
+            JavaScript, and REST API development, with a strong foundation in
+            building scalable, user-centric applications. Passionate about
+            developing clean, maintainable code, solving real-world problems,
+            and continuously learning modern technologies to create high-quality
+            software solutions.
           </p>
         </div>
       </section>

@@ -41,7 +41,7 @@ const services: Service[] = [
     description:
       "I build fast, accessible and pixel-perfect websites and web apps that look great on every device and turn visitors into users.",
     process: ["Discover", "Design", "Build", "Launch"],
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    tech: ["React", "Next.js", "Tailwind CSS", "JavaScript"],
   },
   {
     icon: FiLayers,
@@ -49,7 +49,7 @@ const services: Service[] = [
     description:
       "From API design to deployment, I develop scalable, secure full-stack applications with real-time features, authentication and caching that hold up under load.",
     process: ["Architect", "Develop", "Integrate", "Deploy"],
-    tech: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Redis", "Socket.io"],
+    tech: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
   },
 ];
 

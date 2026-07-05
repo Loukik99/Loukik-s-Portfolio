@@ -15,24 +15,24 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Software Engineer (Full Stack)</h4>
-                <h5>SDK Infotech Pvt Ltd · Pune</h5>
+                <h4>Freelance Full-Stack Developer</h4>
+                <h5>Self-employed · Pune</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Architecting and shipping production-grade full-stack applications
-              with React, Next.js, Node.js and PostgreSQL. I design RESTful APIs
-              with rate limiting and versioning, build real-time features using
-              Socket.io with Redis caching, optimise database queries, and mentor
-              junior developers while delivering under tight deadlines.
+              Partnering with clients and teams to design, build and ship
+              modern, scalable web applications end to end. I craft responsive
+              front-ends with React and Next.js, and build secure REST and
+              real-time APIs with Node.js, Express and PostgreSQL, delivering
+              polished, reliable releases.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Master of Computer Applications</h4>
-                <h5>Jain University · Bangalore</h5>
+                <h5>Jain University · Bengaluru · 2023-2025</h5>
               </div>
               <h3>MCA</h3>
             </div>
@@ -46,7 +46,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Bachelor of Computer Applications</h4>
-                <h5>Rani Channamma University · Belagavi</h5>
+                <h5>Govindram Science College · Belgaum · 2019-2022</h5>
               </div>
               <h3>BCA</h3>
             </div>

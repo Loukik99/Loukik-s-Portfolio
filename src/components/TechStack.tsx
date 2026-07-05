@@ -4,32 +4,24 @@ import {
   SiHtml5,
   SiCss,
   SiJavascript,
-  SiTypescript,
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
-  SiRedux,
-  SiMui,
   SiNodedotjs,
   SiExpress,
-  SiSocketdotio,
-  SiJsonwebtokens,
   SiMongodb,
   SiMysql,
   SiPostgresql,
-  SiRedis,
   SiGit,
   SiGithub,
   SiGithubactions,
-  SiDocker,
   SiVercel,
   SiGooglechrome,
-  SiJira,
   SiOpenai,
   SiGithubcopilot,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
-import { FaLock, FaRobot } from "react-icons/fa6";
+import { FaRobot } from "react-icons/fa6";
 import "./styles/TechStack.css";
 
 interface Tech {
@@ -49,13 +41,10 @@ const categories: Category[] = [
       { name: "HTML5", icon: SiHtml5, color: "#e34f26" },
       { name: "CSS3", icon: SiCss, color: "#1572b6" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
       { name: "React", icon: SiReact, color: "#61dafb" },
       { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38bdf8" },
-      { name: "Redux", icon: SiRedux, color: "#764abc" },
       { name: "Context API", icon: SiReact, color: "#61dafb" },
-      { name: "Material UI", icon: SiMui, color: "#007fff" },
     ],
   },
   {
@@ -64,9 +53,6 @@ const categories: Category[] = [
       { name: "Node.js", icon: SiNodedotjs, color: "#5fa04e" },
       { name: "Express.js", icon: SiExpress, color: "#ffffff" },
       { name: "REST APIs", icon: TbApi, color: "#5eead4" },
-      { name: "Socket.io", icon: SiSocketdotio, color: "#ffffff" },
-      { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff" },
-      { name: "OAuth", icon: FaLock, color: "#5eead4" },
     ],
   },
   {
@@ -75,7 +61,6 @@ const categories: Category[] = [
       { name: "MongoDB", icon: SiMongodb, color: "#47a248" },
       { name: "MySQL", icon: SiMysql, color: "#4479a1" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169e1" },
-      { name: "Redis", icon: SiRedis, color: "#ff4438" },
     ],
   },
   {
@@ -84,10 +69,8 @@ const categories: Category[] = [
       { name: "Git", icon: SiGit, color: "#f05032" },
       { name: "GitHub", icon: SiGithub, color: "#ffffff" },
       { name: "GitHub Actions", icon: SiGithubactions, color: "#2088ff" },
-      { name: "Docker", icon: SiDocker, color: "#2496ed" },
       { name: "Vercel", icon: SiVercel, color: "#ffffff" },
       { name: "Chrome DevTools", icon: SiGooglechrome, color: "#4285f4" },
-      { name: "Jira", icon: SiJira, color: "#0052cc" },
     ],
   },
   {

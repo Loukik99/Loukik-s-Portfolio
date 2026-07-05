@@ -47,17 +47,17 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I'm a <span className="about-hl">full-stack software engineer</span>{" "}
-          who turns complex ideas into fast, reliable products. Over the last
-          1.8+ years I've architected and shipped{" "}
-          <span className="about-hl">production web applications</span> with
-          React, Next.js, Node.js and PostgreSQL, engineering{" "}
-          <span className="about-hl">high-throughput APIs</span> and{" "}
-          <span className="about-hl">real-time systems</span> with caching
-          layers that stay fast under load. As a{" "}
-          <span className="about-hl">freelancer</span>, I partner with teams to
-          design and build scalable, well-crafted software{" "}
-          <span className="about-hl">end to end</span>.
+          Motivated <span className="about-hl">Full Stack Developer</span> with{" "}
+          <span className="about-hl">freelance experience</span> delivering
+          responsive, production-ready web applications and business websites
+          for clients across consultancy, event management, and corporate
+          domains. Skilled in React.js, Next.js, Node.js, Express.js, MongoDB,
+          SQL, JavaScript, and REST API development, with a strong foundation in
+          building <span className="about-hl">scalable, user-centric applications</span>.
+          Passionate about developing{" "}
+          <span className="about-hl">clean, maintainable code</span>, solving
+          real-world problems, and continuously learning modern technologies to
+          create high-quality software solutions.
         </p>
       </div>
     </div>
